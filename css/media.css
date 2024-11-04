@@ -1,0 +1,130 @@
+@media screen and (max-width: 1050px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        justify-content: end;
+    }
+    .brix {
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 30px 32px;
+        justify-content: end;
+    }
+  /* бургер меню */    
+    .menu {
+    display: none;
+    }
+    .brix{
+    /* padding: 0px 32px; */
+    width: 720px;
+    height: 45px;
+    }
+    .telephonLog {
+        display: none;
+    }
+    /* .logo{
+        display: flex;
+        text-align: right;
+    } */
+    .burger-menu {
+        display: flex;
+    }
+
+    /* сложенное меню */
+    .navigation-adaptive, .grose, .telephonLog{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+
+    .padding-top-bottom-section {
+        padding: 70px 0px;
+    }
+
+    .flex-column {
+        gap: 70px;
+    }
+    .section-slider{
+        padding: 70px 0px;
+    }
+    .slider-container{
+        position: relative;
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+}
+
+@media screen and (max-width: 360px) {
+    .padding-top-bottom-section {
+        padding: 40px 0px;
+    }
+
+    .flex-column {
+        gap: 40px;
+    }
+        .section-slider {
+            padding: 40px 0px;
+        }
+        .slider-container{
+            position: relative;
+            width: 60%;
+            height: 60%;
+            margin: 0 auto;
+            overflow: hidden;
+            }
+        .brix{
+                /* padding: 0px 32px; */
+             width: 720px;
+            height: 45px;
+            }
+            /* .prev-button img, .next-button img{
+                font-size: 20px;
+                width: 5vh;
+                height: 5vb;
+            } */
+        .navigation-adaptive{
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionSlaid{
+            width: auto;
+        }
+        .prev-button, .next-button{
+            width: auto;
+        }
+        
+    
+    
+}
+
+
+/* window.addEventListener ("resize", AutoScale)
+
+AutoScale()
+
+function AutoScale ()
+{
+    let width = window.innerWidth
+
+    if (width > 1280)
+    {
+   	 ChangeScale("big")
+    }
+    else if (width <= 1280 && width > 720)
+    {
+   	 ChangeScale("normal")
+    }
+    else if (width < 720)
+    {
+   	 ChangeScale("small")
+    }
+} */

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя работа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonStyles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header>
+         <!-- навигация -->
+            <nav class="brix">
+                <div class="logo-company">
+                 <img class="log" src="img/LogoCompanay.svg" alt="mainlogo">
+                 <li><a href="#">Логотип текстом</a></li>
+                </div>
+                <ul class="menu">
+                    <li><a href="#sectionCatalog">Каталог</a></li>
+                    <li><a href="#sectionAdvantages">Наши преимущества</a></li>
+                    <li><a href="#sectionPage">Примеры работ</a></li>
+                </ul>
+                <nav class="telephonLog">
+                    <img class="telephon" src="img/3. Круг, заливка, большая.svg" alt="telephone">
+                    <ul class="grose">
+                        <!-- <img class="telephon" src="img/3. Круг, заливка, большая.svg" alt="telephone"> -->
+                    <li><a href="tel:" title="Позвонить"><b>8 (800) 000-00-00</b></a></li>
+                    <li><a href="#">Ежедневно с 9:00 до 20:00</a></li>
+                    </ul>
+                </nav>
+            </nav>
+          <!-- бургер иконка -->
+         <div class="burger-menu">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+         </div>
+    </header>
+
+    <section id="sectionCatalog" class="catalog padding-top-bottom-section">
+        <div class="wrapper flex-column gap-section">
+            <h2>Каталог</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="img/Мозайка.jpeg" alt="Напольная мозайка">
+                    <div class="text_flex-item">
+                        <h3>Резиновые пазлы</h3>
+                        <p class="description_flex-item">Представленное покрытие отлично подойдет для спортивных площадок, скалодромов</p>
+                        <p class="price">от 705р/шт</p>
+                        <button class="btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Ламинат мал.jpg" alt="Ламинат для зала">
+                    <div class="text_flex-item">
+                        <h3>Износостойкий паркет</h3>
+                        <p class="description_flex-item">Спортивный паркет идеально подходит для очень больших зданий с низкой высотой пола</p>
+                        <p class="price">1200р/&#13217</p>
+                        <button>Заказать</button>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Татами мал.jpg" alt="Татами для зала">
+                    <div class="text_flex-item"><h3>Татами</h3>
+                        <p class="description_flex-item">Предназначены для проведения тренеровок и соревнований по различным видам единоборств</p>
+                        <p class="price">От 900р/&#13217</p>
+                        <button>Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sectionAdvantages" class="advantages padding-top-bottom-section">
+        <div class="wrapper flex-column gap-section">
+            <h2>Наши преимущества</h2>
+            <div class="grid-container">
+                <div class="grid-item grid-item-1 flex_grid-item">
+                    <h3>01</h3>
+                    <p>Мы фанатики своей работы, деньги для нас вторичны. И это серьёзное преимущество.</p>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <h3>02</h3>
+                    <p>Мы работаем круглосуточно, причем без праздников и выходных.</p>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <h3>03</h3>
+                    <p>Быстрая доставка, гарантия цены и качества.</p>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <h3>04</h3>
+                    <p>Продажа продукции только напрямую, минуя цепь посредников.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="sectionPage" class="sectionSlaid">
+        <h1 class="page-title">Примеры работ</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img/Крошка.jpg" alt="резиновые пазлы">
+                <img src="img/Бесшовное покрытие.jpg" alt="Спортивные покрытия">
+                <img src="img/Ламинат.jpg" alt="Спортивный ламинат">
+                <img src="img/Татами 2.jpg" alt="Татами">
+            </div>
+            <button class="prev-button" type="button" aria-label="Посмотреть предидущий слайд"><img src="img/Arrow-left.svg" alt="Влево"></button>
+            <button class="next-button" type="button" aria-label="Посмотреть следующий слайд"><img src="img/Arrow-right.svg" alt="Вправо"></button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="wrapper flex-column">
+            <div class="flex-container">
+                <a href="#">Согласие на обработку данных</a>
+                <a href="#">Служба поддержки</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="flex-container">
+                <p>© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script type="module" src="js/main.js"></script>
+
+    <!-- <script src="js/burgerMenu.js"></script> -->
+
+    <!-- слайдер не подключается из за type="module"  -->
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* @import url(reset.css); */
+/* Шапка страницы */
+
+header {
+    padding: 50px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 2px;
+    background-color: #3a4f39;
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    /* иконка  */
+}
+
+.logo-company {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.brix {
+    display: flex;
+    gap: 178px;
+    list-style: none;
+}
+/* .grose{ */
+    /* display: block; */
+    /* text-align: justify;
+    flex-direction: column;
+    width: 20px; 
+    height: 150px; */
+/* } */
+
+.telephonLog {
+    display: flex;
+    gap: 15px; 
+    white-space: nowrap;
+}
+
+
+.menu a, 
+.navigation-adaptive,
+.brix a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2e363e;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.brix a:hover,
+.navigation-adaptive a:hover{
+    color: #FFC107;
+}
+
+.navigation-adaptive {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 77.95px;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+/* секция каталог */
+
+.catalog {
+    background-color: #ecf0f1;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 8px 16px 0 rgba(107, 120, 156, 0.526);
+    max-width: 380px;
+    min-width: 320px;
+}
+
+.flex-item img {
+    width: 100%;
+}
+
+
+.text_flex-item {
+    padding: 50px 39px;
+}
+
+.text_flex-item h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 143%;
+}
+
+.text_flex-item .description_flex-item {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2e363e;
+}
+
+.text_flex-item .price {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #434b53;
+}
+
+.text_flex-item button {
+    border-radius: 8px;
+    padding: 20px 40px;
+    background-color: #2825e8;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.text_flex-item button:hover {
+    background-color: #032184;
+}
+
+/* секция грид */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 20px;
+}
+.grid-item {
+    border: 2px solid #e2eaf2;
+    border-radius: 5px;
+    /* height: 326px; */
+    padding: 164px 24px 28px 39px;
+}
+.flex_grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.grid-item-1 {
+    grid-column: 1/8;
+    grid-row: 1/2;
+
+}
+.grid-item-2 {
+    grid-column: 8/13;
+    grid-row: 1/2;
+    
+}
+.grid-item-3 {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    
+}
+.grid-item-4 {
+    grid-column: 6/13;
+    grid-row: 2/3;
+}
+
+.grid-item h3 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 143%;
+    color: #1f3a93;
+}
+.grid-item p {
+    line-height: 143%;
+}
+
+
+/* footer  */
+
+footer {
+    padding: 46px 0px 40px;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #7e868e;
+}
+
+footer .flex-column{
+    gap: 22px;
+
+}
+
+footer .flex-container:first-child {
+    gap: 43px;
+}
+
+footer a{
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: #1f3a93;
+}
+
+/* свайпер */
+   .page-title{
+    text-align: center;
+    font-size: 36px;
+    padding: 100px 0px;
+   }
+  .slaider-title {
+    text-align: center;
+    }
+    
+    .slider-container {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+    
+    .slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 66px;
+    color: white;
+    }
+    
+    .prev-button {
+    left: 10px;
+    }
+    
+    .next-button {
+    right: 10px;
+    }
